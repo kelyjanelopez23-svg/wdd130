@@ -15,7 +15,8 @@ nav {
 
 nav a {
     color: white;
-    text-decoration: none;
+    padding: 15px;
+    display: block;
     margin: 20px;
 }
 
@@ -36,6 +37,8 @@ h1 {
 /* Profile Image */
 main img:first-of-type {
     width: 150px;
+    height: 200px;
+    padding: 150px;
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     float: left;
@@ -51,7 +54,7 @@ main p {
 aside {
     width: 250px;
     border: 1px solid #ccc;
-    background: white;
+    background-color: white;
     padding: 15px;
     margin-top: 30px;
     text-align: center;
@@ -62,8 +65,12 @@ aside h2 {
 }
 
 aside img {
-    width: 140px;
+    width: 200px;
     height: auto;
+}
+
+p {
+    padding: 0;
 }
 
 /* Footer */
@@ -73,5 +80,6 @@ footer {
     background-color: #4d81b8;
     color: white;
     margin-top: 30px;
+    border-top: 30px;
     clear: both;
 }
