@@ -1,13 +1,8 @@
 body {
     margin: 0;
-
 }
 
-main {
-    max-width: 840px;
-    margin: 0 auto;
-}
-
+/* NAV */
 nav {
     background-color: steelblue;
     padding: 1rem;
@@ -16,13 +11,21 @@ nav {
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: 1rem;
 }
 
+/* MAIN */
+main {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+/* H1 */
 h1 {
     color: steelblue;
 }
 
+/* MAIN IMAGE */
 main img {
     width: 150px;
     height: auto;
@@ -31,6 +34,7 @@ main img {
     box-shadow: 0 0 30px gray;
 }
 
+/* ASIDE */
 aside {
     width: 20rem;
     margin: 1rem;
@@ -45,10 +49,12 @@ aside img {
     height: auto;
 }
 
+/* PARAGRAPH */
 p {
     padding: 0;
 }
 
+/* FOOTER */
 footer {
     margin-top: 15px;
     border-top: 1px solid black;
