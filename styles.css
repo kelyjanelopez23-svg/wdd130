@@ -1,10 +1,10 @@
 /* NAV */
-.nav {
+nav {
     background-color: #333;
     padding: 10px;
 }
 
-.nav a {
+nav a {
     color: white;
     padding: 10px;
     display: block;
@@ -12,7 +12,7 @@
 }
 
 /* MAIN */
-.main {
+main {
     max-width: 800px;
     margin: auto;
 }
