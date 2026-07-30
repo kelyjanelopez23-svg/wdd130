@@ -11,8 +11,7 @@ nav a {
 }
 
 main {
-    max-width: 800px;
-    margin: auto;
+    max-width: 840px;
 }
 
 h1 {
@@ -20,7 +19,7 @@ h1 {
 }
 
 main img {
-    width: 300px;
+    width: 150px;
     height: auto;
     border: 2px solid black;
     padding: 5px;
@@ -28,7 +27,7 @@ main img {
 }
 
 aside {
-    width: 300px;
+    width: 200px;
     margin: 20px;
     border: 1px solid black;
     padding: 10px;
