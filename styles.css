@@ -1,29 +1,22 @@
-/* NAV */
 nav {
     background-color: #333;
     padding: 10px;
 }
 
-/* NAV LINKS */
 nav a {
     color: white;
     padding: 10px;
     display: block;
-    text-decoration: none;
 }
 
-/* MAIN */
 main {
     max-width: 800px;
-    margin: auto;
 }
 
-/* H1 */
 h1 {
     color: darkblue;
 }
 
-/* MAIN IMAGE */
 main img {
     width: 300px;
     height: auto;
@@ -32,7 +25,6 @@ main img {
     box-shadow: 5px 5px 10px gray;
 }
 
-/* ASIDE */
 aside {
     width: 300px;
     margin: 20px;
@@ -42,18 +34,15 @@ aside {
     color: black;
 }
 
-/* ASIDE IMAGE */
 aside img {
     width: 200px;
     height: auto;
 }
 
-/* PARAGRAPH */
 p {
     padding: 0;
 }
 
-/* FOOTER */
 footer {
     margin-top: 20px;
     border-top: 1px solid black;
