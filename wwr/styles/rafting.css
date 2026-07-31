@@ -1,0 +1,167 @@
+/* ===== CSS Variables ===== */
+
+:root {
+    --primary-color: #005f73;
+    --secondary-color: #0a9396;
+    --accent1-color: #94d2bd;
+    --accent2-color: #ee9b00;
+
+    --heading-font: Georgia, serif;
+    --body-font: Arial, sans-serif;
+}
+
+/* ===== Universal Reset ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Body ===== */
+
+body {
+    font-family: var(--body-font);
+    color: var(--primary-color);
+}
+
+/* ===== Main Layout ===== */
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* ===== Header ===== */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 100px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* ===== Headings ===== */
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* ===== Basic Spacing ===== */
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* ===== Hero Section ===== */
+
+.hero {
+    position: relative;
+}
+
+.hero > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Hero Title Overlay */
+
+.hero h1 {
+
+    position: absolute;
+
+    top: 20px;
+
+    width: 100%;
+
+    padding: 16px;
+
+    text-align: center;
+
+    opacity: 0.8;
+
+    background-color: var(--primary-color);
+
+    color: white;
+}
+
+/* Article Overlay */
+
+.hero article {
+
+    position: absolute;
+
+    top: 130px;
+
+    left: 40px;
+
+    right: 40px;
+
+    background-color: white;
+
+    opacity: 0.9;
+
+}
+
+/* Client Image Inside Article */
+
+.hero article img {
+
+    float: right;
+
+    width: 125px;
+
+    margin-left: 15px;
+
+    border: 2px solid var(--secondary-color);
+
+}
+
+/* ===== Footer ===== */
+
+footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    border-top: 1px solid gray;
+
+}
+
+.socialmedia a {
+
+    text-decoration: none;
+
+}
+
+.socialmedia img {
+
+    width: 40px;
+
+}
