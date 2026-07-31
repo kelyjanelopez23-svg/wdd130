@@ -1,4 +1,4 @@
-/* ===== Universal Reset ===== */
+/* Universal Reset */
 
 * {
     margin: 0;
@@ -7,88 +7,121 @@
 }
 
 /* BODY */
+
 body {
     font-family: Arial, sans-serif;
 }
 
-/* NAV */
-nav {
-    background-color: steelblue;
-    padding: 1rem;
-}
+/* HEADER, GRID, FOOTER WIDTH */
 
-nav a {
-    color: white;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-}
-
-/* MAIN */
-main {
+header,
+.grid,
+footer {
     max-width: 840px;
     margin: 0 auto;
 }
 
-/* H1 */
-h1 {
-    color: steelblue;
-    margin-bottom: 1rem;
+/* NAVIGATION */
+
+nav {
+    background-color: steelblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-/* PROFILE IMAGE (FLOAT RIGHT) */
-main img {
-    float: right;
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    margin: 0 0 1rem 1rem;
+nav a {
+    color: white;
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+/* GRID LAYOUT */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: start;
+}
+
+/* MAIN */
+
+main {
+    grid-column: 2;
 }
 
 /* ASIDE */
+
 aside {
-    position: relative;
-    /* REQUIRED for overlay */
+    grid-column: 1;
+    grid-row: 1;
+
     width: 20rem;
+    border: 1px solid gray;
+    padding: 1rem;
+
+    background-color: #eee;
+    color: #333;
 }
 
-/* ASIDE IMAGE */
-aside img {
-    width: 100%;
-    height: auto;
-}
+/* HEADING */
 
-/* OVERLAY HEADING */
-aside h2 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 0.5rem;
-}
-
-/* PARAGRAPH */
-p {
+h1 {
+    color: steelblue;
+    border-bottom: 1px solid steelblue;
     margin-bottom: 1rem;
 }
 
-/* FOOTER */
-footer {
-    margin-top: 15px;
-    border-top: 1px solid black;
-    text-align: center;
-    padding: 1rem;
+/* PROFILE IMAGE FLOAT */
+
+main img {
+    width: 150px;
+    height: auto;
+
+    float: right;
+
+    border: 1px solid black;
+    padding: 2px;
+
+    box-shadow: 0 0 30px gray;
+
+    margin: 0 0 1rem 1rem;
 }
 
-/* ===== Class Selectors ===== */
+/* ASIDE IMAGE */
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* PARAGRAPH */
+
+p {
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+/* BOX CLASS */
 
 .box {
     margin: 1rem;
     padding: 1rem;
-    border: 2px solid #333;
-    background-color: #f0f0f0;
-    color: #222;
+    border: 1px solid gray;
+    background-color: #eee;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 15px;
+
+    border-top: 1px solid black;
+
+    text-align: center;
+
+    padding: 1rem;
 }
