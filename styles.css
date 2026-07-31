@@ -1,14 +1,5 @@
-/* ===== Universal Reset ===== */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* BODY */
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 /* NAV */
@@ -19,9 +10,8 @@ nav {
 
 nav a {
     color: white;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
+    display: block;
+    padding: 1rem;
 }
 
 /* MAIN */
@@ -33,46 +23,35 @@ main {
 /* H1 */
 h1 {
     color: steelblue;
-    margin-bottom: 1rem;
 }
 
-/* PROFILE IMAGE (FLOAT RIGHT) */
+/* MAIN IMAGE */
 main img {
-    float: right;
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-    margin: 0 0 1rem 1rem;
 }
 
 /* ASIDE */
 aside {
-    position: relative;
-    /* REQUIRED for overlay */
     width: 20rem;
+    margin: 1rem;
+    border: 1px solid gray;
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
 }
 
-/* ASIDE IMAGE */
 aside img {
-    width: 100%;
+    width: 200px;
     height: auto;
-}
-
-/* OVERLAY HEADING */
-aside h2 {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 0.5rem;
 }
 
 /* PARAGRAPH */
 p {
-    margin-bottom: 1rem;
+    padding: 0;
 }
 
 /* FOOTER */
@@ -80,15 +59,4 @@ footer {
     margin-top: 15px;
     border-top: 1px solid black;
     text-align: center;
-    padding: 1rem;
-}
-
-/* ===== Class Selectors ===== */
-
-.box {
-    margin: 1rem;
-    padding: 1rem;
-    border: 2px solid #333;
-    background-color: #f0f0f0;
-    color: #222;
 }
