@@ -257,6 +257,13 @@ footer {
 }
 
 /* ===== Employee Section ===== */
+.employees {
+    border: 1px solid var(--gray-color);
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
 .employee-list {
     display: flex;
     justify-content: center;
@@ -264,29 +271,31 @@ footer {
 }
 
 .employee-list figure {
-    width: 150px;
+    width: 160px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color: white;
     text-align: center;
 }
 
 .employee-list img {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     object-fit: cover;
+    border-radius: 50%;
     display: block;
     margin: 0 auto 10px;
-    border-radius: 50%;
 }
 
 .employee-list figcaption {
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .employee-list p {
     font-size: 0.85rem;
-    color: #555;
+    margin: 0;
 }
 
 /* Radio Buttons */
