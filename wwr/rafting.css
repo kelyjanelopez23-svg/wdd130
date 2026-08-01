@@ -267,11 +267,11 @@ footer {
 .employee-list {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 .employee-list figure {
-    width: 160px;
+    width: 180px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -280,22 +280,23 @@ footer {
 }
 
 .employee-list img {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 50%;
     display: block;
     margin: 0 auto 10px;
+    border-radius: 50%;
 }
 
 .employee-list figcaption {
     font-weight: bold;
+    color: var(--primary-color);
     margin-bottom: 5px;
 }
 
 .employee-list p {
-    font-size: 0.85rem;
-    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
 }
 
 /* Radio Buttons */
