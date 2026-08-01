@@ -2,11 +2,9 @@
 
 :root {
     --primary-color: #005f73;
-    --secondary-color: #007f82;
+    --secondary-color: #0a9396;
     --accent1-color: #94d2bd;
     --accent2-color: #ee9b00;
-    --white-color: #ffffff;
-    --gray-color: #808080;
 
     --heading-font: Georgia, serif;
     --body-font: Arial, sans-serif;
@@ -40,16 +38,13 @@ footer {
 
 header {
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 200px 1fr;
     align-items: center;
 }
 
 header img {
     width: 100px;
-    height: auto;
 }
-
-/* ===== Navigation ===== */
 
 nav {
     display: flex;
@@ -58,7 +53,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--white-color);
+    color: white;
     background-color: var(--primary-color);
     padding: 8px 16px;
 }
@@ -93,20 +88,28 @@ article {
     height: auto;
 }
 
-/* Hero Title */
+/* Hero Title Overlay */
 
 .hero h1 {
+
     position: absolute;
+
     top: 20px;
+
     width: 100%;
+
     padding: 16px;
+
     text-align: center;
+
     opacity: 0.8;
+
     background-color: var(--accent2-color);
-    color: var(--white-color);
+
+    color: white;
 }
 
-/* Hero Article */
+/* Article Overlay */
 
 .hero article {
     position: absolute;
@@ -114,20 +117,23 @@ article {
     left: 40px;
     right: 40px;
     transform: translateY(-50%);
-    background-color: var(--white-color);
+    background-color: white;
     opacity: 0.9;
 }
 
-/* Client Image */
+/* Client Image Inside Article */
 
 .hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 15px;
-    border: 2px solid var(--secondary-color);
-}
 
-/* ===== History Section ===== */
+    float: right;
+
+    width: 125px;
+
+    margin-left: 15px;
+
+    border: 2px solid var(--secondary-color);
+
+}
 
 .history {
     display: grid;
@@ -139,8 +145,6 @@ article {
 .history img {
     width: 100%;
 }
-
-/* ===== Adventures ===== */
 
 .adventures {
     display: flex;
@@ -165,17 +169,15 @@ figcaption {
 /* ===== Footer ===== */
 
 footer {
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
-    border-top: 1px solid var(--gray-color);
-}
 
-/* Social Icons */
+    border-top: 1px solid gray;
 
-.socialmedia {
-    display: flex;
-    gap: 15px;
 }
 
 .socialmedia a {
@@ -183,8 +185,11 @@ footer {
 }
 
 .socialmedia img {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+}
+
+section {
+    margin: 20px 0;
 }
 
 /* =========================
@@ -232,7 +237,7 @@ footer {
 .contact-form input,
 .contact-form textarea {
     padding: 10px;
-    border: 1px solid var(--gray-color);
+    border: 1px solid gray;
     width: 100%;
 }
 
@@ -240,58 +245,89 @@ footer {
     height: 120px;
 }
 
-/* Submit Button */
-
 .contact-form button {
+
     background-color: var(--secondary-color);
-    color: var(--white-color);
+
+    color: white;
+
     padding: 12px;
+
     border: none;
-    border-radius: 5px;
+
     cursor: pointer;
+
     font-size: 16px;
+
 }
 
 .contact-form button:hover {
+
     background-color: var(--primary-color);
+
 }
 
-/* ===== Employee Section ===== */
+/* Employee Section */
 
 .employees {
-    border: 1px solid var(--gray-color);
+
+    border: 1px solid gray;
+
     padding: 20px;
+
 }
 
 .employees h2 {
+
     text-align: center;
+
     margin-bottom: 20px;
+
 }
 
 .employee-list {
+
     display: flex;
+
     justify-content: center;
-    align-items: flex-start;
-    gap: 40px;
-    flex-wrap: wrap;
+
+    gap: 50px;
+
 }
 
 .employee-list figure {
+
     text-align: center;
+
     margin: 0;
+
 }
 
 .employee-list img {
+
     width: 150px;
+
     height: 150px;
+
     object-fit: cover;
-    border-radius: 50%;
+
 }
 
 /* Radio Buttons */
 
 .contact-form input[type="radio"],
 .contact-form input[type="checkbox"] {
+
     width: auto;
+
     margin-right: 8px;
+
+}
+
+/* Submit Button */
+
+.contact-form button {
+
+    border-radius: 5px;
+
 }
