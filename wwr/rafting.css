@@ -258,47 +258,46 @@ footer {
 
 /* ===== Employee Section ===== */
 .employees {
-    border: 1px solid var(--gray-color);
+    margin: 40px 0;
     padding: 20px;
-    margin-top: 30px;
+    border: 1px solid #999;
     text-align: center;
 }
 
-.employees h2 {
-    margin-bottom: 20px;
+.employee-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+    margin-top: 20px;
 }
 
-/* Vertical Layout */
-.employee-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-.employee-list figure {
-    width: 80%;
-    max-width: 500px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.employee-card {
+    width: 220px;
     padding: 15px;
-    border: 1px solid #ddd;
-    background-color: var(--white-color);
+    background: #fff;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    text-align: left;
+    text-align: center;
 }
 
-.employee-list img {
+.employee-card img {
     width: 120px;
     height: 120px;
     object-fit: cover;
     border-radius: 50%;
+    margin-bottom: 10px;
 }
 
-.employee-list figcaption {
-    font-weight: bold;
+.employee-card h3 {
+    font-size: 16px;
     margin-bottom: 5px;
+    color: #003b5c;
+}
+
+.employee-card p {
+    font-size: 14px;
+    color: #555;
 }
 
 /* Radio Buttons */
