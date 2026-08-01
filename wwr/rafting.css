@@ -257,52 +257,34 @@ footer {
 }
 
 /* ===== Employee Section ===== */
-/* ===== Employee Section ===== */
-.employees {
-    border: 1px solid var(--gray-color);
-    padding: 20px;
-    margin-top: 30px;
-    text-align: center;
-}
-
-.employees h2 {
-    margin-bottom: 20px;
-}
-
 .employee-list {
     display: flex;
     justify-content: center;
     gap: 15px;
-    flex-wrap: nowrap;
 }
 
 .employee-list figure {
-    width: 180px;
+    width: 150px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: var(--white-color);
     text-align: center;
 }
 
 .employee-list img {
-    width: 120px;
-    /* smaller image */
-    height: 120px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
     display: block;
     margin: 0 auto 10px;
-    border-radius: 5px;
+    border-radius: 50%;
 }
 
 .employee-list figcaption {
     font-weight: bold;
-    font-size: 1rem;
-    color: var(--primary-color);
 }
 
 .employee-list p {
-    margin-top: 5px;
     font-size: 0.85rem;
     color: #555;
 }
