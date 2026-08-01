@@ -258,7 +258,7 @@ footer {
 
 /* ===== Employee Section ===== */
 .employees {
-    border: 1px solid var(--gray-color);
+    border: 1px solid #999;
     padding: 20px;
     margin-top: 30px;
     text-align: center;
@@ -267,36 +267,24 @@ footer {
 .employee-list {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
+    margin-top: 15px;
 }
 
 .employee-list figure {
-    width: 180px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: white;
-    text-align: center;
+    margin: 0;
 }
 
 .employee-list img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
-    display: block;
-    margin: 0 auto 10px;
-    border-radius: 50%;
 }
 
 .employee-list figcaption {
-    font-weight: bold;
-    color: var(--primary-color);
-    margin-bottom: 5px;
-}
-
-.employee-list p {
+    margin-top: 8px;
     font-size: 0.9rem;
-    color: #555;
+    font-weight: normal;
 }
 
 /* Radio Buttons */
