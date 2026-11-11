@@ -34,9 +34,9 @@ main img {
     margin: 0 0 1rem 1rem;
 }
 
-/* Clear the float so the temple list moves below the profile image */
+/* Clear both left/right floats so the temple list always drops fully below the image */
 ul.box {
-    clear: right;
+    clear: both;
     list-style-position: inside;
 }
 
@@ -73,7 +73,7 @@ footer {
 
 /* Class Selectors */
 .box {
-    margin: 1rem;
+    margin: 1rem 0;
     border: 1px solid rgb(0 0 0 / 20%);
     padding: 1rem;
     background-color: #eee;
