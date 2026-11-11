@@ -34,20 +34,31 @@ main img {
     margin: 0 0 1rem 1rem;
 }
 
+/* Clear the float so the temple list moves below the profile image */
+ul.box {
+    clear: right;
+    list-style-position: inside;
+}
+
 aside {
     position: relative;
-    width: 20rem;
+    width: 22rem;
+    clear: both;
+    margin-top: 2rem;
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
+    display: block;
 }
 
 aside h2 {
     position: absolute;
     top: 20px;
     left: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 p {
