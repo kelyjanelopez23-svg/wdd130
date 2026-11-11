@@ -19,6 +19,12 @@ h1 {
 .herodiv {
     margin: 10px auto;
     position: relative;
+    /* This keeps the absolute stats box trapped inside the image container */
+}
+
+.herodiv {
+    margin: 10px auto;
+    position: relative;
     /* Acts as the reference point for the absolute positioned stats box */
 }
 
