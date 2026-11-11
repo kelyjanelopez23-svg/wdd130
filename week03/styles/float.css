@@ -10,17 +10,43 @@ p {
     text-align: justify;
 }
 
+/* 1. Make the image container relative so the absolute child positions inside it */
+.col1 {
+    position: relative;
+    display: inline-block;
+    /* Or block, depending on your layout */
+}
+
 .col1 img {
-    float: right;
-    margin: 0 0 15px 15px;
+    display: block;
+    max-width: 100%;
     border: 1px solid rgb(0 0 0 / 30%);
     box-shadow: 0 0 30px #777;
 }
 
-footer {
-    border-top: 1px solid #555;
-    padding-top: 5px;
-    /* Uncomment the declaration below and observe the results. */
+/* 2. Style and position the absolute overlay box (e.g., .infobox or .overlay) */
+.col1 .overlay {
+    /* Replace with your actual class or selector for the Brazil box */
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    background-color: rgba(50, 70, 40, 0.85);
+    border: 1px solid #222;
+    padding: 10px;
+    color: #fff;
+}
 
+/* 3. Fix the footer at the bottom of the viewport */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #eee;
+    /* Match your page background */
+    border-top: 1px solid #555;
+    padding: 5px 0;
+    text-align: center;
     /* clear: both; */
+    /* Not needed when using position: fixed */
 }
