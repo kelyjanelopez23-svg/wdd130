@@ -4,20 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Float Property</title>
+    <title>CSS Layout: Position Absolute - Manila Temple</title>
     <link rel="stylesheet" href="styles/float.css">
 </head>
 
 <body>
     <main>
-        <h1>CSS Float Example: Using float: right</h1>
+        <h1>CSS Layout: Position Absolute</h1>
 
         <div class="col1">
-            <img src="https://dummyimage.com/200x300/333/fff/" alt="placeholder image" width="200" height="300">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil dolorum repudiandae commodi architecto non! Quam sunt dolorem autem rerum culpa nam dicta cum, minima asperiores totam ea esse ut molestiae. Nostrum ea excepturi. Mollitia ex quis totam.</p>
+            <!-- Absolute overlay box -->
+            <div class="overlay">
+                <h2>Manila Temple</h2>
+                <p>Location: Quezon City, Philippines</p>
+                <p>Dedicated: September 25, 1984</p>
+                <p>Visited: Yes</p>
+            </div>
+
+            <img src="https://churchofjesuschristtemples.org/assets/img/temples/manila-philippines-temple/manila-philippines-temple-3886-main.jpg" alt="Manila Philippines Temple">
         </div>
-        <footer>©️ Footer stuff ... Lorem ipsum <br><em>Note that this footer element is in line with the floated image</em>.</footer>
     </main>
+
+    <footer>
+        Footer Content in Fixed Position with bottom set at 0 pixels.
+    </footer>
 </body>
 
 </html>
