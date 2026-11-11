@@ -14,24 +14,20 @@ h1 {
     text-align: center;
     font-size: 1.5rem;
     text-shadow: 3px 3px 5px #777;
+    margin-bottom: 1rem;
 }
 
 .herodiv {
     margin: 10px auto;
     position: relative;
-    /* This keeps the absolute stats box trapped inside the image container */
-}
-
-.herodiv {
-    margin: 10px auto;
-    position: relative;
-    /* Acts as the reference point for the absolute positioned stats box */
+    width: 100%;
 }
 
 .herodiv img {
     width: 100%;
     height: 300px;
     object-fit: cover;
+    display: block;
 }
 
 .stats {
