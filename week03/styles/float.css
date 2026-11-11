@@ -1,52 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 main {
-    width: 75vw;
-    margin: 1rem auto;
-    background-color: #eee;
-    padding: 1rem;
-    border: 1px solid rgb(0 0 0 / 10%);
+    max-width: 800px;
+    margin: 2rem auto;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-p {
-    text-align: justify;
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 3px 3px 5px #777;
 }
 
-/* 1. Make the image container relative so the absolute child positions inside it */
-.col1 {
+.herodiv {
+    margin: 10px auto;
     position: relative;
-    display: inline-block;
-    /* Or block, depending on your layout */
+    /* Acts as the reference point for the absolute positioned stats box */
 }
 
-.col1 img {
-    display: block;
-    max-width: 100%;
-    border: 1px solid rgb(0 0 0 / 30%);
-    box-shadow: 0 0 30px #777;
+.herodiv img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
 }
 
-/* 2. Style and position the absolute overlay box (e.g., .infobox or .overlay) */
-.col1 .overlay {
-    /* Replace with your actual class or selector for the Brazil box */
+.stats {
     position: absolute;
-    top: 40%;
-    left: 5%;
-    background-color: rgba(50, 70, 40, 0.85);
-    border: 1px solid #222;
-    padding: 10px;
+    bottom: 25px;
+    left: 25px;
+    background: radial-gradient(#eee, #323A06);
+    border: 1px solid #000;
+    padding: 0.65rem;
+    box-shadow: 0 0 30px #111;
+    opacity: 0.9;
     color: #fff;
 }
 
-/* 3. Fix the footer at the bottom of the viewport */
+h2 {
+    text-shadow: 0 0 15px #333;
+    border-bottom: 1px solid #555;
+    margin-bottom: 0.3rem;
+}
+
 footer {
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #eee;
-    /* Match your page background */
-    border-top: 1px solid #555;
-    padding: 5px 0;
-    text-align: center;
-    /* clear: both; */
-    /* Not needed when using position: fixed */
+    margin: 1rem;
+    border-top: 1px solid #000;
+    padding: 0.5rem;
+    color: navy;
+    font-weight: 700;
+    font-style: italic;
+    background-color: #fff;
 }
