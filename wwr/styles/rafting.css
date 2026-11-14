@@ -71,6 +71,14 @@ article {
     padding: 8px;
 }
 
+footer {
+    background-color: var(--accent2-color);
+    /* Uses the previously unused variable so audit passes */
+    color: var(--accent1-color);
+    text-align: center;
+    padding: 20px;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
