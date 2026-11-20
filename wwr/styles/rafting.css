@@ -83,8 +83,8 @@ main {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(13, 59, 102, 0.85);
-    color: white;
+    background-color: var(--hero-heading-bg);
+    color: var(--white);
     padding: 1rem 2rem;
     text-align: center;
     width: 80%;
@@ -97,7 +97,7 @@ main {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.92);
+    background-color: var(--hero-article-bg);
     padding: 1.5rem;
     width: 80%;
     max-width: 750px;
@@ -129,7 +129,7 @@ h2 {
     gap: 1.5rem;
     align-items: center;
     padding: 1.5rem;
-    background-color: #f7f9fb;
+    background-color: var(--light-bg);
 }
 
 .history h2 {
@@ -179,7 +179,7 @@ h2 {
 /* Footer: Centered text with right-aligned social icons */
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: var(--white);
     padding: 1.5rem 2rem;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
