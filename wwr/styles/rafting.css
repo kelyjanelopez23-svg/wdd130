@@ -12,6 +12,10 @@
     --accent1-color: #ee964b;
     --text-color: #2b2b2b;
     --background-color: #ffffff;
+    --light-bg: #f7f9fb;
+    --white: #ffffff;
+    --hero-heading-bg: rgba(13, 59, 102, 0.85);
+    --hero-article-bg: rgba(255, 255, 255, 0.92);
     --heading-font: 'Georgia', serif;
     --paragraph-font: 'Arial', sans-serif;
 }
